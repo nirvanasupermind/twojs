@@ -3,7 +3,7 @@ A 2D scene graph library in JavaScript based on three.js's API.
 
 # Example
 ```html
-<!-- Create a static yellow square -->
+<!-- Creates a static blue square -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,7 +15,7 @@ A 2D scene graph library in JavaScript based on three.js's API.
 
 <body>
     <canvas id="canvas" width="960px" height="540px" style="border: 5px solid black;"> </canvas>
-    <script type="text/javascript" src="./two.js"></script>
+    <script type="text/javascript" src="two.js"></script>
     <script type="text/javascript">
         var scene = new TWO.Scene();
 
@@ -25,7 +25,7 @@ A 2D scene graph library in JavaScript based on three.js's API.
         var renderer = new TWO.Renderer(ctx);
 
         var geometry = new TWO.RectGeometry(100, 100);
-        var material = new TWO.Material({ color: 0xffff00 });
+        var material = new TWO.Material({ color: 0x0000ff });
         var mesh = new TWO.Mesh(geometry, material);
 
         scene.add(mesh);
