@@ -1,5 +1,11 @@
 # twojs
-A 2D scene graph library in JavaScript based on three.js's API.
+A 2D scene graph library in JavaScript based on the three.js API.
+
+# Import
+
+```html
+<script type="text/javascript" src="path/to/two.js"></script>
+```
 
 # Example
 ```html
@@ -15,7 +21,7 @@ A 2D scene graph library in JavaScript based on three.js's API.
 
 <body>
     <canvas id="canvas" width="960px" height="540px" style="border: 5px solid black;"> </canvas>
-    <script type="text/javascript" src="two.js"></script>
+    <script type="text/javascript" src="path/to/two.js"></script>
     <script type="text/javascript">
         var scene = new TWO.Scene();
 
@@ -40,3 +46,6 @@ A 2D scene graph library in JavaScript based on three.js's API.
 
 </html>
 ```
+
+# Minification
+For convenience I am providing a minified/obfuscated version `two.min.js` that is being generated with uglify.js.
